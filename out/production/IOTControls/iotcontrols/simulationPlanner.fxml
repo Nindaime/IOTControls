@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="simulationPlannerPanel" prefHeight="200.0" prefWidth="552.0" styleClass="hallWay2" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iotcontrols.SimulationPlannerController">
+   <children>
+      <Label layoutX="52.0" layoutY="35.0" minHeight="16" minWidth="69" text="Inveter Mode" />
+      <Label layoutX="402.0" layoutY="35.0" minHeight="16" minWidth="69" text="Main Source" />
+      <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="128.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../app-icons/battery_power.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnHideUtilPanel" layoutX="516.0" layoutY="6.0" onAction="#hideUtilPanel" prefHeight="25.0" prefWidth="25.0" style="-fx-background-radius: 100%; -fx-background-color: cornflowerblue; -fx-padding: 5;" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+               <image>
+                  <Image url="@../app-icons/play1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Hide Simulation Panel" />
+         </tooltip>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ScrollPane layoutX="51.0" layoutY="85.0" prefHeight="41.0" prefWidth="450.0" vbarPolicy="NEVER">
+         <content>
+            <HBox id="activityList" fx:id="activityList" minWidth="450.0" />
+         </content>
+      </ScrollPane>
+      <TextField fx:id="txtFAnimation" layoutX="51.0" layoutY="150.0" onAction="#addActivity" prefHeight="32.0" prefWidth="238.0" promptText="Enter Activity Here" />
+      <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="471.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../app-icons/power_socket.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="53.0" layoutY="128.0" minHeight="16" minWidth="69" text="Activity" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

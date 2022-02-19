@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 26, 2017, 8:50:31 AM
+    Author     : USER
+*/
+
+
+.lectureRoom{ 
+    -fx-background-color: lavender; 
+    -fx-border-color: derive(steelblue, 10%);
+}
+
+.chair:first-child{
+    -fx-fill: palegoldenrod;
+}
+
+.chair:last-child, .table{
+    -fx-fill: tan;
+}
+
+.camera:first-child{
+    -fx-fill: silver;
+}
+
+.lightbulb{
+    -fx-fill: darkgrey;
+}
+
+.AC{
+    -fx-fill: gainsboro;
+}
+
+.projector{
+    -fx-fill: dimgrey;
+}
+.hallWay, .hallWay2{ 
+    -fx-background-color: brown; 
+    -fx-border-color: derive(steelblue, 10%);
+    -fx-border-width: 3px;
+}
+.hallWay2{
+    -fx-background-color: lightgrey;
+}
+
+.controlButton{
+	-fx-background-radius: 100%;
+	-fx-pref-height: 50px;
+	-fx-pref-width: 50px;
+}
+.student, .lecturer{
+    -fx-effect: dropshadow(gaussian, black, 5, 0, -2, 2);
+    -fx-stroke-width: 2px;
+    -fx-stroke: dodgerblue;
+    -fx-fill: white;
+}
+.lecturer{
+    -fx-stroke: tan;
+}
+.activity-1, .activity-2{
+    -fx-background-color: beige;
+    -fx-border-color: black;
+    -fx-padding: 3;
+    -fx-pref-width: 60px;
+    -fx-pref-height:25px;
+}
+.activity-2{
+    -fx-background-color:  greenyellow;
+}
+.scroll-pane{
+    /*-fx-background-color: blue;*/
+}
+.tracker{
+    -fx-fill: rgba(0,0,0,0);
+}
+
+.label_notifier{
+    -fx-alignment: center;
+    -fx-font: 18px "Arial";
+    -fx-text-fill: black;
+}

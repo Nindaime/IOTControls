@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.ClosePath?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.LineTo?>
+<?import javafx.scene.shape.MoveTo?>
+<?import javafx.scene.shape.Path?>
+<?import javafx.scene.shape.QuadCurveTo?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="floorPlan" fx:id="floorPlan" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#requestfocus" onMouseDragged="#pick" onMousePressed="#determine" onMouseReleased="#drop" prefHeight="423.0" prefWidth="552.0" style="-fx-background-color: palegoldenrod;" styleClass="hallWay" stylesheets="@../css/MyCss.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iotcontrols.FXMLDocumentController">
+   <children>
+      <Pane id="Office1" fx:id="Office1" layoutX="2.0" layoutY="2.0" prefHeight="147.0" prefWidth="230.0" styleClass="lectureRoom">
+         <children>
+            <Group id="Office1Camera" fx:id="Office1Camera" layoutX="-5.0" layoutY="3.0" rotate="49.4" scaleX="0.6" scaleY="0.6">
+               <children>
+                  <Path fill="SILVER" layoutX="-91.99240112304688" layoutY="-65.35580444335938" rotate="-45.0" scaleX="0.1" scaleY="0.1" stroke="BLACK" strokeType="INSIDE">
+                     <elements>
+                        <MoveTo x="100.0" />
+                        <LineTo x="130.0" y="40.0" />
+                        <QuadCurveTo controlX="250.0" controlY="70.0" x="155.0" y="135.0" />
+                        <QuadCurveTo controlX="80.0" controlY="180.0" x="80.0" y="85.0" />
+                        <LineTo x="50.0" y="50.0" />
+                        <ClosePath />
+                     </elements>
+                  </Path>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" layoutX="1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="25.0" />
+               </children>
+            </Group>
+            <Rectangle id="Office1Table" fx:id="Office1Table" arcHeight="5.0" arcWidth="5.0" fill="TAN" height="60.0" layoutX="58.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" styleClass="table" width="41.0" />
+            <Path id="Office1CameraView" fx:id="Office1CameraView" fill="#517394" layoutX="-22.0" layoutY="-5.0" opacity="0.2" rotate="-14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false">
+               <elements>
+                  <MoveTo x="70.0" />
+                  <LineTo x="262.0" y="100.0" />
+                  <QuadCurveTo controlX="243.0" controlY="219.0" x="70.0" y="180.0" />
+                  <LineTo x="54.0" y="15.0" />
+                  <ClosePath />
+               </elements>
+            </Path>
+            <Ellipse fill="GREY" layoutX="79.0" layoutY="100.0" radiusX="10.0" radiusY="10.0" stroke="BLACK" strokeType="INSIDE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="50.0" layoutX="77.0" layoutY="73.0" stroke="BLACK" strokeType="INSIDE" width="4.0" />
+            <Group id="Office1Chair" fx:id="Office1Chair" layoutX="25.0" layoutY="82.0" styleClass="chair">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="PALEGOLDENROD" height="30.0" layoutX="10.0" stroke="BLACK" strokeType="INSIDE" width="19.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TAN" height="30.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+               </children>
+            </Group>
+            <Rectangle id="Office1TV" fx:id="Office1TV" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="220.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="224.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+            <Path id="Office1Light" fx:id="Office1Light" layoutX="-90.0" layoutY="-4.0" opacity="0.4" rotate="-98.1" scaleX="0.5" scaleY="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false">
+               <elements>
+                  <MoveTo x="70.0" />
+                  <LineTo x="226.0" y="100.0" />
+                  <QuadCurveTo controlX="185.0" controlY="219.0" x="66.0" y="178.0" />
+                  <LineTo x="54.0" y="15.0" />
+                  <ClosePath />
+               </elements>
+               <fill>
+                  <LinearGradient endX="0.9904761904761905" endY="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="0.007662835249042145" />
+                        <Stop color="#ffb200" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Path>
+            <Rectangle id="Office1AC" fx:id="Office1AC" arcHeight="5.0" arcWidth="5.0" fill="GAINSBORO" height="32.0" layoutX="140.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" styleClass="AC" width="40.0" />
+            <Path id="Office1Bulb" fx:id="Office1Bulb" fill="DARKGRAY" layoutX="-114.0" layoutY="64.0" rotate="-79.5" scaleX="0.1" scaleY="0.1" stroke="BLACK" strokeType="INSIDE" styleClass="lightbulb">
+               <elements>
+                  <MoveTo x="100.0" />
+                  <LineTo x="130.0" y="40.0" />
+                  <QuadCurveTo controlX="250.0" controlY="70.0" x="155.0" y="135.0" />
+                  <QuadCurveTo controlX="80.0" controlY="180.0" x="80.0" y="85.0" />
+                  <LineTo x="50.0" y="50.0" />
+                  <ClosePath />
+               </elements>
+            </Path>
+            <Rectangle id="Office1Door" fx:id="Office1Door" arcHeight="5.0" arcWidth="5.0" fill="TAN" height="35.0" layoutX="225.0" layoutY="111.0" stroke="BLACK" strokeType="INSIDE" width="4.0" />
+            <Path id="Office1TvView" fx:id="Office1TvView" layoutX="102.0" layoutY="40.0" opacity="0.0" rotate="142.3" scaleX="0.8" scaleY="0.8" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <elements>
+                  <MoveTo x="74.0" y="-10.0" />
+                  <LineTo x="141.0" y="-40.0" />
+                  <LineTo x="62.0" y="55.0" />
+                  <LineTo x="50.0" y="45.0" />
+                  <LineTo x="47.0" y="25.0" />
+                  <ClosePath />
+               </elements>
+               <fill>
+                  <LinearGradient endX="1.0" endY="0.42380952380952386" startX="0.34285714285714286" startY="0.0761904761904762">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="0.007662835249042145" />
+                        <Stop color="#f93b00" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Path>
+            <Path id="Office1PvView" fx:id="Office1PcView" layoutX="-28.0" layoutY="82.0" opacity="0.0" rotate="153.5" scaleX="0.7" scaleY="0.7" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <elements>
+                  <MoveTo x="74.0" y="-10.0" />
+                  <LineTo x="119.0" y="-40.0" />
+                  <LineTo x="69.0" y="70.0" />
+                  <LineTo x="57.0" y="25.0" />
+                  <ClosePath />
+               </elements>
+               <fill>
+                  <LinearGradient endX="1.0" endY="0.42380952380952386" startX="0.34285714285714286" startY="0.0761904761904762">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="0.007662835249042145" />
+                        <Stop color="#f93b00" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Path>
+            <Rectangle id="Office1Router" fx:id="Office1Router" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="16.0" layoutX="84.0" layoutY="71.0" stroke="BLACK" strokeType="INSIDE" width="13.0" />
+         </children>
+      </Pane>
+      <Pane id="Office2" fx:id="Office2" layoutX="2.0" layoutY="148.0" prefHeight="147.0" prefWidth="230.0" styleClass="lectureRoom">
+         <children>
+            <Group id="Office2Camera" fx:id="Office2Camera" layoutX="-1.0" layoutY="4.0" rotate="42.5" scaleX="0.6" scaleY="0.6">
+               <children>
+                  <Path fill="SILVER" layoutX="-94.99240112304688" layoutY="-65.35580444335938" rotate="-45.0" scaleX="0.1" scaleY="0.1" stroke="BLACK" strokeType="INSIDE">
+                     <elements>
+                        <MoveTo x="100.0" />
+                        <LineTo x="130.0" y="40.0" />
+                        <QuadCurveTo controlX="250.0" controlY="70.0" x="155.0" y="135.0" />
+                        <QuadCurveTo controlX="80.0" controlY="180.0" x="80.0" y="85.0" />
+                        <LineTo x="50.0" y="50.0" />
+                        <ClosePath />
+                     </elements>
+                  </Path>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" layoutX="-4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="25.0" />
+               </children>
+            </Group>
+            <Path id="Office2CameraView" fx:id="Office2CameraView" fill="#517394" layoutX="-25.0" layoutY="2.0" opacity="0.0" rotate="-8.1" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false">
+               <elements>
+                  <MoveTo x="70.0" />
+                  <LineTo x="262.0" y="100.0" />
+                  <QuadCurveTo controlX="243.0" controlY="219.0" x="70.0" y="180.0" />
+                  <LineTo x="54.0" y="15.0" />
+                  <ClosePath />
+               </elements>
+            </Path>
+            <Rectangle id="Office2Table" fx:id="Office2Table" arcHeight="5.0" arcWidth="5.0" fill="TAN" height="60.0" layoutX="58.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="41.0" />
+            <Ellipse fill="DODGERBLUE" layoutX="79.0" layoutY="100.0" radiusX="10.0" radiusY="10.0" stroke="BLACK" strokeType="INSIDE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="77.0" layoutY="73.0" stroke="BLACK" strokeType="INSIDE" width="4.0" />
+            <Group id="Office2Chair" fx:id="Office2Chair" layoutX="25.0" layoutY="82.0" styleClass="chair">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="30.0" layoutX="10.0" stroke="BLACK" strokeType="INSIDE" width="19.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="30.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+               </children>
+            </Group>
+            <Rectangle id="Office2TV" fx:id="Office2TV" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="220.0" layoutY="2.0" stroke="BLACK" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="224.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+            <Path id="Office2Light" fx:id="Office2Light" layoutX="-90.0" layoutY="-4.0" opacity="0.4" rotate="-98.1" scaleX="0.5" scaleY="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false">
+               <elements>
+                  <MoveTo x="70.0" />
+                  <LineTo x="226.0" y="100.0" />
+                  <QuadCurveTo controlX="185.0" controlY="219.0" x="66.0" y="178.0" />
+                  <LineTo x="54.0" y="15.0" />
+                  <ClosePath />
+               </elements>
+               <fill>
+                  <LinearGradient endX="0.9904761904761905" endY="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="0.007662835249042145" />
+                        <Stop color="#ffb200" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Path>
+            <Rectangle id="Office2AC" fx:id="Office2AC" arcHeight="5.0" arcWidth="5.0" fill="GAINSBORO" height="32.0" layoutX="140.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" styleClass="AC" width="40.0" />
+            <Path id="Office2Bulb" fx:id="Office2Bulb" fill="DODGERBLUE" layoutX="-114.0" layoutY="62.0" rotate="-90.0" scaleX="0.1" scaleY="0.1" stroke="BLACK" strokeType="INSIDE" styleClass="lightbulb">
+               <elements>
+                  <MoveTo x="100.0" />
+                  <LineTo x="130.0" y="40.0" />
+                  <QuadCurveTo controlX="250.0" controlY="70.0" x="155.0" y="135.0" />
+                  <QuadCurveTo controlX="80.0" controlY="180.0" x="80.0" y="85.0" />
+                  <LineTo x="50.0" y="50.0" />
+                  <ClosePath />
+               </elements>
+            </Path>
+            <Rectangle id="Office2Door" fx:id="Office2Door" arcHeight="5.0" arcWidth="5.0" fill="TAN" height="35.0" layoutX="226.0" layoutY="111.0" stroke="BLACK" strokeType="INSIDE" width="4.0" />
+            <Path id="Office2PcView" fx:id="Office2PcView" layoutX="-28.0" layoutY="81.0" opacity="0.0" rotate="153.5" scaleX="0.7" scaleY="0.7" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <elements>
+                  <MoveTo x="74.0" y="-10.0" />
+                  <LineTo x="119.0" y="-40.0" />
+                  <LineTo x="69.0" y="70.0" />
+                  <LineTo x="57.0" y="25.0" />
+                  <ClosePath />
+               </elements>
+               <fill>
+                  <LinearGradient endX="1.0" endY="0.42380952380952386" startX="0.34285714285714286" startY="0.0761904761904762">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="0.007662835249042145" />
+                        <Stop color="#f93b00" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Path>
+            <Path id="Office2TvView" fx:id="Office2TvView" layoutX="99.0" layoutY="39.0" opacity="0.0" rotate="142.0" scaleX="0.8" scaleY="0.8" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <elements>
+                  <MoveTo x="74.0" y="-10.0" />
+                  <LineTo x="141.0" y="-40.0" />
+                  <LineTo x="62.0" y="55.0" />
+                  <LineTo x="50.0" y="45.0" />
+                  <LineTo x="47.0" y="25.0" />
+                  <ClosePath />
+               </elements>
+               <fill>
+                  <LinearGradient endX="1.0" endY="0.42380952380952386" startX="0.34285714285714286" startY="0.0761904761904762">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="0.007662835249042145" />
+                        <Stop color="#f93b00" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Path>
+            <Rectangle id="Office2Router" fx:id="Office2Router" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="16.0" layoutX="84.0" layoutY="70.0" stroke="BLACK" strokeType="INSIDE" width="13.0" />
+         </children>
+      </Pane>
+      <Pane id="Toilet" fx:id="Toilet" layoutX="2.0" layoutY="294.0" prefHeight="74.0" prefWidth="230.0" styleClass="lectureRoom">
+         <children>
+            <Group id="WaterCloset" fx:id="WaterCloset" layoutX="5.0" layoutY="22.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITESMOKE" height="32.0" stroke="BLACK" strokeType="INSIDE" width="19.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITESMOKE" height="10.0" layoutX="18.0" layoutY="11.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+                  <Ellipse fill="DARKGRAY" layoutX="41.0" layoutY="16.0" radiusX="15.0" radiusY="13.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Ellipse layoutX="41.0" layoutY="16.0" radiusX="13.0" radiusY="11.0" stroke="BLACK" strokeType="INSIDE">
+                     <fill>
+                        <RadialGradient centerX="0.4277777777777778" centerY="0.49523809523809526" cycleMethod="REFLECT" focusDistance="-0.18604651162790697" radius="0.22093023255813954">
+                           <stops>
+                              <Stop color="WHITE" />
+                              <Stop color="WHITE" offset="0.007662835249042145" />
+                              <Stop color="#b5b5b5" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                  </Ellipse>
+               </children>
+            </Group>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="140.0" layoutY="69.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Group id="ToiletSink" fx:id="ToiletSink" layoutX="102.0" layoutY="-10.0" rotate="-133.0" scaleX="0.4" scaleY="0.4">
+               <children>
+                  <Path fill="DODGERBLUE" stroke="BLACK" strokeType="INSIDE">
+                     <elements>
+                        <MoveTo x="90.0" y="30.0" />
+                        <LineTo x="106.0" y="51.0" />
+                        <QuadCurveTo controlX="120.0" controlY="125.0" x="40.0" y="120.0" />
+                        <LineTo x="18.0" y="107.0" />
+                        <ClosePath />
+                     </elements>
+                  </Path>
+                  <Path fill="WHITE" layoutX="3.008514404296875" layoutY="2.031646728515625" scaleX="0.8" scaleY="0.8" stroke="BLACK" strokeType="INSIDE">
+                     <elements>
+                        <MoveTo x="90.0" y="30.0" />
+                        <LineTo x="106.0" y="51.0" />
+                        <QuadCurveTo controlX="120.0" controlY="125.0" x="40.0" y="120.0" />
+                        <LineTo x="18.0" y="107.0" />
+                        <ClosePath />
+                     </elements>
+                  </Path>
+                  <Circle fill="#013a6f" layoutX="86.0" layoutY="63.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="86.0" layoutY="63.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="32.0" layoutY="104.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="32.0" layoutY="104.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </Group>
+            <Path id="ToiletLight" fx:id="ToiletLight" layoutX="-47.0" layoutY="-65.0" opacity="0.4" rotate="-30.0" scaleX="0.4" scaleY="0.4" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false">
+               <elements>
+                  <MoveTo x="70.0" />
+                  <LineTo x="226.0" y="100.0" />
+                  <QuadCurveTo controlX="185.0" controlY="219.0" x="66.0" y="178.0" />
+                  <LineTo x="54.0" y="15.0" />
+                  <ClosePath />
+               </elements>
+               <fill>
+                  <LinearGradient endX="0.9904761904761905" endY="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="0.007662835249042145" />
+                        <Stop color="#ffb200" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Path>
+            <Path id="ToiletBulb" fx:id="ToiletBulb" fill="DODGERBLUE" layoutX="-80.0" layoutY="-66.0" rotate="-6.0" scaleX="0.1" scaleY="0.1" stroke="BLACK" strokeType="INSIDE" styleClass="lightbulb">
+               <elements>
+                  <MoveTo x="100.0" />
+                  <LineTo x="130.0" y="40.0" />
+                  <QuadCurveTo controlX="250.0" controlY="70.0" x="155.0" y="135.0" />
+                  <QuadCurveTo controlX="80.0" controlY="180.0" x="80.0" y="85.0" />
+                  <LineTo x="50.0" y="50.0" />
+                  <ClosePath />
+               </elements>
+            </Path>
+            <Rectangle id="ToiletDoor" fx:id="ToiletDoor" arcHeight="5.0" arcWidth="5.0" fill="TAN" height="35.0" layoutX="226.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="4.0" />
+            <Rectangle id="ToiletRouter" fx:id="ToiletRouter" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="15.0" layoutX="208.0" layoutY="59.0" stroke="BLACK" strokeType="INSIDE" width="22.0" />
+            <Path id="ToiletCameraView" fx:id="ToiletCameraView" fill="#517394" layoutX="-8.0" layoutY="-64.0" opacity="0.0" rotate="-90.5" scaleX="0.35" scaleY="0.8" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <elements>
+                  <MoveTo x="70.0" />
+                  <LineTo x="262.0" y="100.0" />
+                  <QuadCurveTo controlX="243.0" controlY="219.0" x="70.0" y="180.0" />
+                  <LineTo x="62.0" />
+                  <ClosePath />
+               </elements>
+            </Path>
+            <Group id="ToiletCamera" fx:id="ToiletCamera" layoutX="50.0" layoutY="57.0" rotate="-10.5" scaleX="0.6" scaleY="0.6" styleClass="camera">
+               <children>
+                  <Path fill="DODGERBLUE" layoutX="-94.99240112304688" layoutY="-65.35580444335938" rotate="-45.0" scaleX="0.1" scaleY="0.1" stroke="BLACK" strokeType="INSIDE">
+                     <elements>
+                        <MoveTo x="100.0" />
+                        <LineTo x="130.0" y="40.0" />
+                        <QuadCurveTo controlX="250.0" controlY="70.0" x="155.0" y="135.0" />
+                        <QuadCurveTo controlX="80.0" controlY="180.0" x="80.0" y="85.0" />
+                        <LineTo x="50.0" y="50.0" />
+                        <ClosePath />
+                     </elements>
+                  </Path>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" layoutX="-4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="25.0" />
+               </children>
+            </Group>
+         </children>
+      </Pane>
+      <Pane id="LectureRoom1" fx:id="LectureRoom1" layoutX="301.0" layoutY="1.0" prefHeight="210.0" prefWidth="250.0" styleClass="lectureRoom">
+         <children>
+            <Rectangle id="LectureRoom1Door" fx:id="LectureRoom1Door" arcHeight="5.0" arcWidth="5.0" fill="TAN" height="40.0" layoutY="169.0" stroke="BLACK" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="31.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle id="LectRoom1Chair02" fx:id="LectRoom1Chair02" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="11.0" layoutX="31.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="138.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle id="LectRoom1Chair12" fx:id="LectRoom1Chair12" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="11.0" layoutX="138.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="31.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle id="LectRoom1Chair01" fx:id="LectRoom1Chair01" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="11.0" layoutX="31.0" layoutY="52.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="138.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle id="LectRoom1Chair11" fx:id="LectRoom1Chair11" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="11.0" layoutX="138.0" layoutY="52.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="137.0" layoutY="86.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle id="LectRoom1Chair10" fx:id="LectRoom1Chair10" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="11.0" layoutX="137.0" layoutY="90.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="31.0" layoutY="86.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle id="LectRoom1Chair00" fx:id="LectRoom1Chair00" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="11.0" layoutX="31.0" layoutY="90.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle id="LectRoom1AC" fx:id="LectRoom1AC" arcHeight="5.0" arcWidth="5.0" height="40.0" layoutX="217.0" layoutY="133.0" stroke="BLACK" strokeType="INSIDE" styleClass="AC" width="32.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill></Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="43.0" layoutY="187.0" stroke="BLACK" strokeType="INSIDE" width="170.0" />
+            <Rectangle id="LectRoom1Projector" fx:id="LectRoom1Projector" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="19.0" layoutX="112.0" layoutY="118.0" stroke="BLACK" strokeType="INSIDE" styleClass="projector" width="21.0" />
+            <Path id="LectRoom1ProjectorView" fx:id="LectRoom1ProjectorView" fill="BLACK" layoutX="19.0" layoutY="159.0" opacity="0.0" rotate="54.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <elements>
+                  <MoveTo x="66.0" />
+                  <LineTo x="161.0" y="-39.0" />
+                  <LineTo x="58.0" y="100.0" />
+                  <LineTo x="60.0" y="8.0" />
+                  <ClosePath />
+               </elements>
+            </Path>
+            <Path id="LectRoom1Bulb00" fx:id="LectRoom1Bulb00" fill="DODGERBLUE" layoutX="-115.0" layoutY="35.0" rotate="-45.0" scaleX="0.1" scaleY="0.1" stroke="BLACK" strokeType="INSIDE" styleClass="lightbulb">
+               <elements>
+                  <MoveTo x="100.0" />
+                  <LineTo x="130.0" y="40.0" />
+                  <QuadCurveTo controlX="250.0" controlY="70.0" x="155.0" y="135.0" />
+                  <QuadCurveTo controlX="80.0" controlY="180.0" x="80.0" y="85.0" />
+                  <LineTo x="50.0" y="50.0" />
+                  <ClosePath />
+               </elements>
+            </Path>
+            <Path id="LectRoom1Light00" fx:id="LectRoom1Light00" layoutX="-64.0" layoutY="5.0" opacity="0.4" rotate="-61.599999999999994" scaleX="0.5" scaleY="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false">
+               <elements>
+                  <MoveTo x="70.0" />
+                  <LineTo x="226.0" y="100.0" />
+                  <QuadCurveTo controlX="185.0" controlY="219.0" x="66.0" y="178.0" />
+                  <LineTo x="54.0" y="15.0" />
+                  <ClosePath />
+               </elements>
+               <fill>
+                  <LinearGradient endX="0.9904761904761905" endY="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="0.007662835249042145" />
+                        <Stop color="#ffb200" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Path>
+            <Path id="LectRoom1Bulb01" fx:id="LectRoom1Bulb01" fill="DODGERBLUE" layoutX="-115.0" layoutY="-27.0" rotate="-45.0" scaleX="0.1" scaleY="0.1" stroke="BLACK" strokeType="INSIDE" styleClass="lightbulb">
+               <elements>
+                  <MoveTo x="100.0" />
+                  <LineTo x="130.0" y="40.0" />
+                  <QuadCurveTo controlX="250.0" controlY="70.0" x="155.0" y="135.0" />
+                  <QuadCurveTo controlX="80.0" controlY="180.0" x="80.0" y="85.0" />
+                  <LineTo x="50.0" y="50.0" />
+                  <ClosePath />
+               </elements>
+            </Path>
+            <Path id="LectRoom1Light01" fx:id="LectRoom1Light01" layoutX="-67.0" layoutY="-56.0" opacity="0.4" rotate="-58.4" scaleX="0.5" scaleY="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false">
+               <elements>
+                  <MoveTo x="70.0" />
+                  <LineTo x="226.0" y="100.0" />
+                  <QuadCurveTo controlX="185.0" controlY="219.0" x="66.0" y="178.0" />
+                  <LineTo x="54.0" y="15.0" />
+                  <ClosePath />
+               </elements>
+               <fill>
+                  <LinearGradient endY="1.0" startY="0.22857142857142854">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#fcb000" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Path>
+            <Path id="LectRoom1Build10" fx:id="LectRoom1Build10" fill="DODGERBLUE" layoutX="119.0" layoutY="37.0" rotate="135.0" scaleX="0.1" scaleY="0.1" stroke="BLACK" strokeType="INSIDE" styleClass="lightbulb">
+               <elements>
+                  <MoveTo x="100.0" />
+                  <LineTo x="130.0" y="40.0" />
+                  <QuadCurveTo controlX="250.0" controlY="70.0" x="155.0" y="135.0" />
+                  <QuadCurveTo controlX="80.0" controlY="180.0" x="80.0" y="85.0" />
+                  <LineTo x="50.0" y="50.0" />
+                  <ClosePath />
+               </elements>
+            </Path>
+            <Path id="LectRoom1Light10" fx:id="LectRoom1Light10" layoutX="34.0" layoutY="26.0" opacity="0.4" rotate="121.0" scaleX="0.5" scaleY="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false">
+               <elements>
+                  <MoveTo x="70.0" />
+                  <LineTo x="226.0" y="100.0" />
+                  <QuadCurveTo controlX="185.0" controlY="219.0" x="66.0" y="178.0" />
+                  <LineTo x="54.0" y="15.0" />
+                  <ClosePath />
+               </elements>
+               <fill>
+                  <LinearGradient endY="1.0" startY="0.22857142857142854">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#fcb000" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Path>
+            <Path id="LectRoom1Build11" fx:id="LectRoom1Build11" fill="DODGERBLUE" layoutX="119.0" layoutY="-26.0" rotate="135.0" scaleX="0.1" scaleY="0.1" stroke="BLACK" strokeType="INSIDE" styleClass="lightbulb">
+               <elements>
+                  <MoveTo x="100.0" />
+                  <LineTo x="130.0" y="40.0" />
+                  <QuadCurveTo controlX="250.0" controlY="70.0" x="155.0" y="135.0" />
+                  <QuadCurveTo controlX="80.0" controlY="180.0" x="80.0" y="85.0" />
+                  <LineTo x="50.0" y="50.0" />
+                  <ClosePath />
+               </elements>
+            </Path>
+            <Path id="LectRoom1Light11" fx:id="LectRoom1Light11" layoutX="34.0" layoutY="-42.0" opacity="0.4" rotate="130.0" scaleX="0.5" scaleY="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false">
+               <elements>
+                  <MoveTo x="70.0" />
+                  <LineTo x="226.0" y="100.0" />
+                  <QuadCurveTo controlX="185.0" controlY="219.0" x="66.0" y="178.0" />
+                  <LineTo x="54.0" y="15.0" />
+                  <ClosePath />
+               </elements>
+               <fill>
+                  <LinearGradient endX="0.09523809523809523" endY="1.0" startY="0.3142857142857143">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#fcb000" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Path>
+            <Rectangle id="LectRoom1Router" fx:id="LectRoom1Router" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="15.0" layoutX="227.0" layoutY="194.0" stroke="BLACK" strokeType="INSIDE" width="22.0" />
+         </children>
+      </Pane>
+      <Pane id="LectureRoom2" fx:id="LectureRoom2" layoutX="301.0" layoutY="211.0" prefHeight="210.0" prefWidth="250.0" styleClass="lectureRoom">
+         <children>
+            <Rectangle id="LectureRoom2Door" fx:id="LectureRoom2Door" arcHeight="5.0" arcWidth="5.0" fill="TAN" height="40.0" layoutY="169.0" stroke="BLACK" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="31.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle id="LectRoom2Chair02" fx:id="LectRoom2Chair02" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="11.0" layoutX="31.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="138.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle id="LectRoom2Chair12" fx:id="LectRoom2Chair12" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="11.0" layoutX="138.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="31.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle id="LectRoom2Chair01" fx:id="LectRoom2Chair01" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="11.0" layoutX="31.0" layoutY="52.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="138.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle id="LectRoom2Chair11" fx:id="LectRoom2Chair11" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="11.0" layoutX="138.0" layoutY="52.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="137.0" layoutY="86.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle id="LectRoom2Chair10" fx:id="LectRoom2Chair10" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="11.0" layoutX="137.0" layoutY="90.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="31.0" layoutY="86.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle id="LectRoom2Chair00" fx:id="LectRoom2Chair00" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="11.0" layoutX="31.0" layoutY="90.0" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+            <Rectangle id="LectRoom2AC" fx:id="LectRoom2AC" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="217.0" layoutY="137.0" stroke="BLACK" strokeType="INSIDE" styleClass="AC" width="32.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="43.0" layoutY="191.0" stroke="BLACK" strokeType="INSIDE" width="170.0" />
+            <Rectangle id="LectRoom2Projector" fx:id="LectRoom2Projector" arcHeight="5.0" arcWidth="5.0" fill="DIMGRAY" height="19.0" layoutX="113.0" layoutY="121.0" stroke="BLACK" strokeType="INSIDE" styleClass="projector" width="21.0" />
+            <Path id="LectRoom2Bulb00" fx:id="LectRoom2Bulb00" fill="DODGERBLUE" layoutX="-115.0" layoutY="35.0" rotate="-45.0" scaleX="0.1" scaleY="0.1" stroke="BLACK" strokeType="INSIDE" styleClass="lightbulb">
+               <elements>
+                  <MoveTo x="100.0" />
+                  <LineTo x="130.0" y="40.0" />
+                  <QuadCurveTo controlX="250.0" controlY="70.0" x="155.0" y="135.0" />
+                  <QuadCurveTo controlX="80.0" controlY="180.0" x="80.0" y="85.0" />
+                  <LineTo x="50.0" y="50.0" />
+                  <ClosePath />
+               </elements>
+            </Path>
+            <Path id="LectRoom2Light00" fx:id="LectRoom2Light00" layoutX="-64.0" layoutY="5.0" opacity="0.4" rotate="-61.599999999999994" scaleX="0.5" scaleY="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false">
+               <elements>
+                  <MoveTo x="70.0" />
+                  <LineTo x="226.0" y="100.0" />
+                  <QuadCurveTo controlX="185.0" controlY="219.0" x="66.0" y="178.0" />
+                  <LineTo x="54.0" y="15.0" />
+                  <ClosePath />
+               </elements>
+               <fill>
+                  <LinearGradient endX="0.9904761904761905" endY="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="0.007662835249042145" />
+                        <Stop color="#ffb200" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Path>
+            <Path id="LectRoom2Bulb01" fx:id="LectRoom2Bulb01" fill="DODGERBLUE" layoutX="-115.0" layoutY="-27.0" rotate="-45.0" scaleX="0.1" scaleY="0.1" stroke="BLACK" strokeType="INSIDE" styleClass="lightbulb">
+               <elements>
+                  <MoveTo x="100.0" />
+                  <LineTo x="130.0" y="40.0" />
+                  <QuadCurveTo controlX="250.0" controlY="70.0" x="155.0" y="135.0" />
+                  <QuadCurveTo controlX="80.0" controlY="180.0" x="80.0" y="85.0" />
+                  <LineTo x="50.0" y="50.0" />
+                  <ClosePath />
+               </elements>
+            </Path>
+            <Path id="LectRoom2Light01" fx:id="LectRoom2Light01" layoutX="-64.0" layoutY="-56.0" opacity="0.4" rotate="-58.4" scaleX="0.5" scaleY="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false">
+               <elements>
+                  <MoveTo x="70.0" />
+                  <LineTo x="226.0" y="100.0" />
+                  <QuadCurveTo controlX="185.0" controlY="219.0" x="66.0" y="178.0" />
+                  <LineTo x="54.0" y="15.0" />
+                  <ClosePath />
+               </elements>
+               <fill>
+                  <LinearGradient endY="1.0" startY="0.22857142857142854">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#fcb000" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Path>
+            <Path id="LectRoom2Bulb10" fx:id="LectRoom2Bulb10" fill="DODGERBLUE" layoutX="119.0" layoutY="37.0" rotate="135.0" scaleX="0.1" scaleY="0.1" stroke="BLACK" strokeType="INSIDE" styleClass="lightbulb">
+               <elements>
+                  <MoveTo x="100.0" />
+                  <LineTo x="130.0" y="40.0" />
+                  <QuadCurveTo controlX="250.0" controlY="70.0" x="155.0" y="135.0" />
+                  <QuadCurveTo controlX="80.0" controlY="180.0" x="80.0" y="85.0" />
+                  <LineTo x="50.0" y="50.0" />
+                  <ClosePath />
+               </elements>
+            </Path>
+            <Path id="LectRoom2Light10" fx:id="LectRoom2Light10" layoutX="37.0" layoutY="29.0" opacity="0.4" rotate="121.0" scaleX="0.5" scaleY="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false">
+               <elements>
+                  <MoveTo x="70.0" />
+                  <LineTo x="226.0" y="100.0" />
+                  <QuadCurveTo controlX="185.0" controlY="219.0" x="66.0" y="178.0" />
+                  <LineTo x="54.0" y="15.0" />
+                  <ClosePath />
+               </elements>
+               <fill>
+                  <LinearGradient endY="1.0" startY="0.22857142857142854">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#fcb000" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Path>
+            <Path id="LectRoom2Bulb11" fx:id="LectRoom2Bulb11" fill="DODGERBLUE" layoutX="119.0" layoutY="-26.0" rotate="135.0" scaleX="0.1" scaleY="0.1" stroke="BLACK" strokeType="INSIDE" styleClass="lightbulb">
+               <elements>
+                  <MoveTo x="100.0" />
+                  <LineTo x="130.0" y="40.0" />
+                  <QuadCurveTo controlX="250.0" controlY="70.0" x="155.0" y="135.0" />
+                  <QuadCurveTo controlX="80.0" controlY="180.0" x="80.0" y="85.0" />
+                  <LineTo x="50.0" y="50.0" />
+                  <ClosePath />
+               </elements>
+            </Path>
+            <Path id="LectRoom2Light11" fx:id="LectRoom2Light11" layoutX="34.0" layoutY="-42.0" opacity="0.4" rotate="130.0" scaleX="0.5" scaleY="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false">
+               <elements>
+                  <MoveTo x="70.0" />
+                  <LineTo x="226.0" y="100.0" />
+                  <QuadCurveTo controlX="185.0" controlY="219.0" x="66.0" y="178.0" />
+                  <LineTo x="54.0" y="15.0" />
+                  <ClosePath />
+               </elements>
+               <fill>
+                  <LinearGradient endX="0.09523809523809523" endY="1.0" startY="0.3142857142857143">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#fcb000" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Path>
+            <Path id="LectRoom2ProjectorView" fx:id="LectRoom2ProjectorView" fill="BLACK" layoutX="21.0" layoutY="163.0" opacity="0.2" rotate="54.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false">
+               <elements>
+                  <MoveTo x="66.0" />
+                  <LineTo x="161.0" y="-39.0" />
+                  <LineTo x="58.0" y="100.0" />
+                  <LineTo x="60.0" y="8.0" />
+                  <ClosePath />
+               </elements>
+            </Path>
+            <Rectangle id="LectRoom2Router" fx:id="LectRoom2Router" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="15.0" layoutX="227.0" layoutY="194.0" stroke="BLACK" strokeType="INSIDE" width="22.0" />
+         </children>
+      </Pane>
+      <Rectangle id="floorPlanDoor" fx:id="floorPlanDoor" arcHeight="5.0" arcWidth="5.0" fill="#8a8a8a" height="50.0" layoutY="369.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+      <AnchorPane id="controlPanel" fx:id="controlPanel" layoutX="240.0" layoutY="350.0" onMouseExited="#ctrolPM_Action" prefHeight="50.0" prefWidth="50.0">
+         <children>
+            <Button fx:id="close" onAction="#closeBtnAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100%; -fx-background-color: cornflowerblue; -fx-padding: 0;" textFill="WHITE">
+               <effect>
+                  <DropShadow height="10.0" offsetX="2.0" offsetY="2.0" radius="4.5" width="10.0" />
+               </effect>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../app-icons/delete1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip fx:id="Close" text="Close Simulator" />
+               </tooltip>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="simPlanner" onAction="#showUtilityPanelSim" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100%; -fx-background-color: cornflowerblue; -fx-padding: 0 0 0 4;" textFill="WHITE">
+               <effect>
+                  <DropShadow height="10.0" offsetX="2.0" offsetY="2.0" radius="4.5" width="10.0" />
+               </effect>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../app-icons/compose.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip fx:id="Plan" text="Simulation Planner" />
+               </tooltip>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="eStats" onAction="#showUtilityPanelEStat" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100%; -fx-background-color: cornflowerblue; -fx-padding: 0;" textFill="WHITE">
+               <effect>
+                  <DropShadow height="10.0" offsetX="2.0" offsetY="2.0" radius="4.5" width="10.0" />
+               </effect>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../app-icons/nodes2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip fx:id="EnergyStats" text="View Energy Stats" />
+               </tooltip>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="stop" onAction="#stopBtnAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100%; -fx-background-color: cornflowerblue; -fx-padding: 0;" textFill="WHITE">
+               <effect>
+                  <DropShadow height="10.0" offsetX="2.0" offsetY="2.0" radius="4.5" width="10.0" />
+               </effect>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../app-icons/stop.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip fx:id="Stop" text="Stop Animation" />
+               </tooltip>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="pause" onAction="#pauseBtnAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100%; -fx-background-color: cornflowerblue; -fx-padding: 0;" textFill="WHITE">
+               <effect>
+                  <DropShadow height="10.0" offsetX="2.0" offsetY="2.0" radius="4.5" width="10.0" />
+               </effect>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../app-icons/pause.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip fx:id="Pause" text="Pause Simulation">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Tooltip>
+               </tooltip>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="play" fx:id="play" onAction="#playBtnAction" onMouseClicked="#playBtnM_Action" onMouseEntered="#hideControlP" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100%; -fx-background-color: cornflowerblue; -fx-padding: 0 0 0 5;" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow height="10.0" offsetX="2.0" offsetY="2.0" radius="4.5" width="10.0" />
+               </effect>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../app-icons/play1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip fx:id="Play" text="Play Simulation" />
+               </tooltip>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label id="lblNotifier" fx:id="lblNotifier" layoutX="80.0" layoutY="2.0" opacity="0.0" prefHeight="26.0" prefWidth="392.0" styleClass="label_notifier" text="Lecturer1 enter premise floorPlan" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="OPEN_HAND" />
+   </cursor>
+</AnchorPane>
