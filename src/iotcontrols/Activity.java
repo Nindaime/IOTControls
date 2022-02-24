@@ -28,8 +28,8 @@ public class Activity{
     private static Path pathCorridor, pathToClassroom1, pathToClassroom1A11, pathToClassroom1A12, pathToClassroom1B11, pathToClassroom1B12,
             pathToClassroom1A21, pathToClassroom1A22, pathToClassroom1A31, pathToClassroom1A32, pathToClassroom1B21, pathToClassroom1B22,
             pathToClassroom1B31, pathToClassroom1B32, pathToClassroom2A11, pathToClassroom2B11, pathCorridorToToilet, pathToiletSink,
-            pathToOffice1, pathToOffice2, pathToOffice1Front, pathToOffice1Sit, pathToOffice1FrontToSit, pathToOffice2Front, pathToOffice2Sit,
-            pathToOffice2FrontToSit, pathToiletWaterCloset, pathToClassroom2, pathToClassroom2A12, pathToClassroom2B12, pathToClassroom2Aisle,
+            pathToOffice1, pathToOffice2, pathToOffice1Front, pathToOffice1Sit, pathToOffice2Front, pathToOffice2Sit, pathToiletToSinkFromWaterCloset,
+            pathToiletWaterCloset, pathToClassroom2, pathToClassroom2A12, pathToClassroom2B12, pathToClassroom2Aisle,
             pathToClassroom2AisleRow2, pathToClassroom2AisleRow3, pathToClassroom2B21, pathToClassroom2B22, pathToClassroom2A22, pathToClassroom2A21,
             pathToClassroom2A32, pathToClassroom2A31, pathToClassroom2B31, pathToClassroom2B32, pathToClassroom2Front1, pathToClassroom2Front2,
             pathToClassroom1AisleRow2, pathToClassroom1AisleRow3, pathToClassroom1Front1, pathToClassroom1Front2;
@@ -59,15 +59,15 @@ public class Activity{
         pathToClassroom1B32 = AnimationSequence.getPath("pathToClassroom1B32");
         pathCorridorToToilet = AnimationSequence.getPath("pathCorridorToToilet");
         pathToiletSink = AnimationSequence.getPath("pathToiletSink");
+        pathToiletToSinkFromWaterCloset = AnimationSequence.getPath("pathToiletToSink");
+//        pathToiletToSinkFromWaterCloset = AnimationSequence.getPath("pathToiletToSinkFromWaterCloset");
         pathToOffice1 = AnimationSequence.getPath("pathToOffice1");
         pathToOffice2 = AnimationSequence.getPath("pathToOffice2");
         pathToiletWaterCloset = AnimationSequence.getPath("pathToiletWaterCloset");
         pathToOffice1Front = AnimationSequence.getPath("pathToOffice1Front");
         pathToOffice1Sit = AnimationSequence.getPath("pathToOffice1Sit");
-        pathToOffice1FrontToSit = AnimationSequence.getPath("pathToOffice1FrontToSit");
         pathToOffice2Front = AnimationSequence.getPath("pathToOffice2Front");
         pathToOffice2Sit = AnimationSequence.getPath("pathToOffice2Sit");
-        pathToOffice2FrontToSit = AnimationSequence.getPath("pathToOffice2FrontToSit");
         pathToClassroom2 = AnimationSequence.getPath("pathToClassroom2");
         pathToClassroom2A11 = AnimationSequence.getPath("pathToClassroom2A11");
         pathToClassroom2A12 = AnimationSequence.getPath("pathToClassroom2A12");
